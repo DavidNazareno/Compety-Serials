@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="../favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compety Seriales</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+
+
+  <body>
+    
+    <main class="container-fluid">
+      <div class="flex-column">
+        <img class="logo" src="../assets/logo_white.png" />
+        <img class="background" src="../assets/back.png" />
+
+        <p class="text">Generador de Serial Compety</p>
+
+        <div class="d-flex flex-column justify-content-center">
+          <textarea id="textArea" class="form-control" readonly> </textarea>
+          <div class="row justify-content-center align-items-center">
+            <input
+            id="lengthSerials"
+              required
+              type="number"
+              class="form-control col-2"
+              placeholder="Cantidad"
+              min="1"
+              max="100"
+              style="background:#fff; color:#241c60; border-radius: 3px; height: 45px; margin-right: 10px; padding:5px"
+            />
+            <button id="installer" class="btn installer col-6">Generar</button>
+          </div>
+        </div>
+
+        <div class="container" id="progess">
+          <div class="sphere" id="sphere1"></div>
+          <div class="sphere" id="sphere2"></div>
+          <div class="sphere" id="sphere3"></div>
+          <div class="sphere" id="sphere4"></div>
+          <div class="sphere" id="sphere5"></div>
+          <div class="sphere" id="sphere6"></div>
+          <div class="sphere" id="sphere7"></div>
+          <div class="sphere" id="sphere8"></div>
+          <div class="sphere" id="sphere9"></div>
+          <div class="sphere" id="sphere10"></div>
+        </div>
+
+        <small class="info">Derechos reservados @ Compety 2020</small>
+      </div>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
